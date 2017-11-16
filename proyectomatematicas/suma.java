@@ -12,12 +12,14 @@ public class suma extends javax.swing.JFrame {
     JLabel[] lbl1, lbl2;
     int niveles = 3, bien, mal, suma = 0;
     String a, b = null;
-    public String ruta = "/sonido/";
+    public String ruta;
     Timer tim;
 
     public suma() {
         initComponents();
         setLocationRelativeTo(null);
+        ruta = System.getProperty("user.dir") + "/sonido/";
+        
         tim = new Timer(5000, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -53,11 +55,12 @@ public class suma extends javax.swing.JFrame {
     public void crearsuma() {
 
         a = numeros();
-        jLabel2.setIcon(new ImageIcon("C:\\Users\\juan1\\Downloads\\" + a + "su1.png"));
-        jLabel6.setIcon(new ImageIcon("C:\\Users\\juan1\\Downloads\\suma1.png"));
+        jLabel2.setIcon(new ImageIcon(ruta+ a + "su1.png"));
+        System.err.println(ruta+ a + "su1.png");
+        jLabel6.setIcon(new ImageIcon(ruta+"suma1.png"));
         b = numeros();
-        jLabel7.setIcon(new ImageIcon("C:\\Users\\juan1\\Downloads\\" + b + "su1.png"));
-        jLabel8.setIcon(new ImageIcon("C:\\Users\\juan1\\Downloads\\igual1.png"));
+        jLabel7.setIcon(new ImageIcon(ruta + b + "su1.png"));
+        jLabel8.setIcon(new ImageIcon(ruta + "igual1.png"));
         suma = Integer.parseInt(a) + Integer.parseInt(b);
         lbl1 = new JLabel[Integer.parseInt(a)];
         lbl2 = new JLabel[Integer.parseInt(b)];
@@ -65,7 +68,7 @@ public class suma extends javax.swing.JFrame {
         int x = 200, j = 0;
         for (int i = 0; i < lbl1.length; i++) {
             lbl1[i] = new JLabel();
-            lbl1[i].setIcon(new ImageIcon("C:\\Users\\juan1\\Downloads\\manzana1.png"));
+            lbl1[i].setIcon(new ImageIcon(ruta + "manzana1.png"));
             if (i >= 5) {
                 lbl1[i].setBounds(x + (45 * j), 130, 40, 40);
                 j++;
@@ -79,7 +82,7 @@ public class suma extends javax.swing.JFrame {
         j = 0;
         for (int i = 0; i < lbl2.length; i++) {
             lbl2[i] = new JLabel();
-            lbl2[i].setIcon(new ImageIcon("C:\\Users\\juan1\\Downloads\\manzana1.png"));
+            lbl2[i].setIcon(new ImageIcon(ruta + "manzana1.png"));
             if (i >= 5) {
                 lbl2[i].setBounds(x + (45 * j), 130, 40, 40);
                 j++;
@@ -121,20 +124,20 @@ public class suma extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(990, 720));
         getContentPane().setLayout(null);
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(230, 410, 70, 110);
+        jLabel2.setBounds(180, 360, 140, 160);
 
         jLabel6.setRequestFocusEnabled(false);
         getContentPane().add(jLabel6);
-        jLabel6.setBounds(320, 400, 140, 110);
+        jLabel6.setBounds(300, 350, 160, 160);
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(500, 400, 130, 110);
+        jLabel7.setBounds(480, 350, 150, 160);
         getContentPane().add(jLabel8);
-        jLabel8.setBounds(600, 410, 80, 90);
+        jLabel8.setBounds(580, 360, 100, 140);
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 0, 140)); // NOI18N
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         getContentPane().add(jLabel9);
-        jLabel9.setBounds(670, 390, 320, 120);
+        jLabel9.setBounds(530, 350, 340, 170);
 
         jButton1.setFont(new java.awt.Font("Tahoma", 0, 55)); // NOI18N
         jButton1.setText("1");
@@ -245,7 +248,7 @@ public class suma extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\juan1\\Downloads\\tablero1.png")); // NOI18N
         jLabel1.setPreferredSize(new java.awt.Dimension(972, 750));
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(170, 10, 670, 350);
+        jLabel1.setBounds(170, 0, 670, 350);
 
         jButton11.setText("Atras");
         jButton11.addActionListener(new java.awt.event.ActionListener() {
