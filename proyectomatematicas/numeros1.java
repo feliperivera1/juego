@@ -137,7 +137,7 @@ public class numeros1 extends javax.swing.JFrame {
         jButton12 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(960, 720));
+        setPreferredSize(new java.awt.Dimension(990, 720));
         getContentPane().setLayout(null);
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\juan1\\Downloads\\manzana1.png")); // NOI18N

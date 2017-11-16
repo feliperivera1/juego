@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package proyectomatematicas;
 
 import java.io.IOException;
@@ -85,7 +81,7 @@ public class numeros extends javax.swing.JFrame {
         jButton11 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(960, 720));
+        setPreferredSize(new java.awt.Dimension(990, 720));
         getContentPane().setLayout(null);
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\juan1\\Downloads\\1n.png")); // NOI18N

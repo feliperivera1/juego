@@ -7,16 +7,17 @@ import javax.swing.JOptionPane;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 
+
 public class proyectomatematica extends javax.swing.JFrame {
-     public String ruta="/sonido/";
     
+       public String ruta;
    
     public proyectomatematica() {
         
         initComponents();
         setLocationRelativeTo(null);
         setVisible(true);
-        
+       
     }
     
    
@@ -46,7 +47,7 @@ public class proyectomatematica extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(java.awt.Color.green);
         setForeground(new java.awt.Color(51, 255, 51));
-        setPreferredSize(new java.awt.Dimension(880, 581));
+        setPreferredSize(new java.awt.Dimension(990, 720));
         getContentPane().setLayout(null);
 
         entrar.setBackground(new java.awt.Color(255, 255, 255));
@@ -79,9 +80,8 @@ public class proyectomatematica extends javax.swing.JFrame {
         salir.setBounds(490, 440, 160, 70);
 
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\juan1\\Documents\\NetBeansProjects\\proyectomatematicas\\src\\sonido\\granja.jpg")); // NOI18N
-        jLabel2.setText("jLabel2");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, 0, 890, 620);
+        jLabel2.setBounds(0, 0, 1050, 620);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -94,6 +94,12 @@ public class proyectomatematica extends javax.swing.JFrame {
                     
     }//GEN-LAST:event_entrarActionPerformed
 
+    public  void imagenes (){
+         // ruta = System.getProperty("user.dir") + "/src/sonido/";
+        //jLabel2.setIcon(new ImageIcon(ruta + "granja.jpg"));
+      
+    }
+    
     private void salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salirActionPerformed
      System.exit(0);       
     }//GEN-LAST:event_salirActionPerformed
@@ -102,7 +108,9 @@ public class proyectomatematica extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
+      
+      
+      /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 

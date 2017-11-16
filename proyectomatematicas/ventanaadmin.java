@@ -26,6 +26,7 @@ public class ventanaadmin extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(910, 663));
+        setPreferredSize(new java.awt.Dimension(990, 720));
         getContentPane().setLayout(null);
 
         jButton1.setBackground(new java.awt.Color(151, 151, 24));
@@ -65,8 +66,9 @@ public class ventanaadmin extends javax.swing.JFrame {
         jButton4.setBounds(370, 400, 160, 90);
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\juan1\\Downloads\\Fondo-cumple-numeros.jpg")); // NOI18N
+        jLabel1.setPreferredSize(new java.awt.Dimension(990, 720));
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(-30, 0, 930, 700);
+        jLabel1.setBounds(-30, 0, 1020, 700);
 
         jMenu1.setLabel("Archivo");
 
