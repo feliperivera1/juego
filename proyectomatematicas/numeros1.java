@@ -1,5 +1,6 @@
 
 package proyectomatematicas;
+import java.io.File;
 import java.io.IOException;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
@@ -11,18 +12,20 @@ public class numeros1 extends javax.swing.JFrame {
 
     
       public  Clip clip;
-    public String ruta="/sonido/";
+        public String ruta;
     
     
     public numeros1() {
         initComponents();
               setLocationRelativeTo(null);
+              ruta = System.getProperty("user.dir") + "\\sonido\\";
     }
 
      public void sonido(String archivo){
         try {
             clip = AudioSystem.getClip();
-            clip.open(AudioSystem.getAudioInputStream(getClass().getResourceAsStream(ruta+archivo+".wav")));
+          System.out.println(ruta+archivo+".wav");
+             clip.open(AudioSystem.getAudioInputStream(new File(ruta+archivo+".wav")));
             clip.start();
             
         }catch(LineUnavailableException | UnsupportedAudioFileException | IOException e){
@@ -611,7 +614,7 @@ public class numeros1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        sonido("1"); 
+        sonido(ruta + "1"); 
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed

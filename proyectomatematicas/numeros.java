@@ -1,6 +1,7 @@
 
 package proyectomatematicas;
 
+import java.io.File;
 import java.io.IOException;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
@@ -17,19 +18,21 @@ public class numeros extends javax.swing.JFrame {
      */
     
     public  Clip clip;
-    public String ruta="/sonido/";
+    public String ruta;
     
  
     
     public numeros() {
         initComponents();
           setLocationRelativeTo(null);
+          ruta = System.getProperty("user.dir") + "\\sonido\\";
     }
     
     public void sonido(String archivo){
         try {
             clip = AudioSystem.getClip();
-            clip.open(AudioSystem.getAudioInputStream(getClass().getResourceAsStream(ruta+archivo+".wav")));
+            System.out.println(ruta+archivo+".wav");
+            clip.open(AudioSystem.getAudioInputStream(new File(ruta+archivo+".wav")));
             clip.start();
             
         }catch(LineUnavailableException | UnsupportedAudioFileException | IOException e){

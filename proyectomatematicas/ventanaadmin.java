@@ -16,7 +16,6 @@ public class ventanaadmin extends javax.swing.JFrame {
 
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
@@ -26,10 +25,9 @@ public class ventanaadmin extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(910, 663));
-        setPreferredSize(new java.awt.Dimension(990, 720));
+        setPreferredSize(new java.awt.Dimension(958, 720));
         getContentPane().setLayout(null);
 
-        jButton1.setBackground(new java.awt.Color(151, 151, 24));
         jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\juan1\\Downloads\\sumaaa.png")); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -37,9 +35,8 @@ public class ventanaadmin extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(200, 230, 140, 140);
+        jButton1.setBounds(290, 290, 150, 120);
 
-        jButton2.setBackground(new java.awt.Color(151, 151, 24));
         jButton2.setIcon(new javax.swing.ImageIcon("C:\\Users\\juan1\\Downloads\\restaa.jpg")); // NOI18N
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -47,28 +44,23 @@ public class ventanaadmin extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(380, 230, 140, 140);
-
-        jButton3.setBackground(new java.awt.Color(151, 151, 24));
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Users\\juan1\\Downloads\\multiplicacion1.png")); // NOI18N
-        getContentPane().add(jButton3);
-        jButton3.setBounds(570, 230, 140, 140);
+        jButton2.setBounds(500, 290, 140, 120);
 
         jButton4.setBackground(new java.awt.Color(151, 151, 24));
         jButton4.setFont(new java.awt.Font("Verdana", 2, 24)); // NOI18N
-        jButton4.setText("Numeros ");
+        jButton4.setIcon(new javax.swing.ImageIcon("C:\\Users\\juan1\\Downloads\\descarga.jpg")); // NOI18N
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
         getContentPane().add(jButton4);
-        jButton4.setBounds(370, 400, 160, 90);
+        jButton4.setBounds(320, 130, 300, 140);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\juan1\\Downloads\\Fondo-cumple-numeros.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\juan1\\Documents\\NetBeansProjects\\proyectomatematicas\\src\\sonido\\estaes.jpg")); // NOI18N
         jLabel1.setPreferredSize(new java.awt.Dimension(990, 720));
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(-30, 0, 1020, 700);
+        jLabel1.setBounds(10, -320, 1190, 1050);
 
         jMenu1.setLabel("Archivo");
 
@@ -140,7 +132,6 @@ public class ventanaadmin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;

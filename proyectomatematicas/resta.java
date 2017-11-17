@@ -343,6 +343,7 @@ private String numeros() {
 
         ventanaadmin ingreso = new ventanaadmin();
         ingreso.setVisible(true);
+            tim.stop();
     }//GEN-LAST:event_jButton11ActionPerformed
 
     /**

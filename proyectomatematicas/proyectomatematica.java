@@ -47,7 +47,7 @@ public class proyectomatematica extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(java.awt.Color.green);
         setForeground(new java.awt.Color(51, 255, 51));
-        setPreferredSize(new java.awt.Dimension(990, 720));
+        setPreferredSize(new java.awt.Dimension(958, 720));
         getContentPane().setLayout(null);
 
         entrar.setBackground(new java.awt.Color(255, 255, 255));
@@ -64,7 +64,7 @@ public class proyectomatematica extends javax.swing.JFrame {
             }
         });
         getContentPane().add(entrar);
-        entrar.setBounds(240, 440, 160, 70);
+        entrar.setBounds(780, 480, 160, 70);
         entrar.getAccessibleContext().setAccessibleName("jugar");
 
         salir.setBackground(new java.awt.Color(255, 255, 255));
@@ -77,11 +77,12 @@ public class proyectomatematica extends javax.swing.JFrame {
             }
         });
         getContentPane().add(salir);
-        salir.setBounds(490, 440, 160, 70);
+        salir.setBounds(0, 480, 160, 70);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\juan1\\Documents\\NetBeansProjects\\proyectomatematicas\\src\\sonido\\granja.jpg")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\juan1\\Documents\\NetBeansProjects\\proyectomatematicas\\src\\sonido\\estaes.jpg")); // NOI18N
+        jLabel2.setPreferredSize(new java.awt.Dimension(990, 720));
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, 0, 1050, 620);
+        jLabel2.setBounds(0, -330, 1560, 1150);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

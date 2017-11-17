@@ -259,7 +259,7 @@ public class suma extends javax.swing.JFrame {
         getContentPane().add(jButton11);
         jButton11.setBounds(20, 440, 79, 23);
 
-        setBounds(0, 0, 1039, 716);
+        setBounds(0, 0, 1003, 713);
     }// </editor-fold>//GEN-END:initComponents
 
     private String numeros() {
@@ -327,6 +327,7 @@ public class suma extends javax.swing.JFrame {
 
         ventanaadmin ingreso = new ventanaadmin();
         ingreso.setVisible(true);
+        tim.stop();
     }//GEN-LAST:event_jButton11ActionPerformed
 
     public static void main(String args[]) {
